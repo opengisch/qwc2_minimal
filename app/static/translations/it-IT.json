@@ -1,0 +1,395 @@
+{
+  "locale": "it-IT",
+  "messages": {
+    "appmenu": {
+      "items": {
+        "ExternalLink": "Collegamento esterno",
+        "AttributeTable": "Tabella attributi",
+        "DxfExport": "Esporta su DXF",
+        "Editing": "Strumenti di modifica",
+        "FeatureForm": "Formulario oggetto",
+        "Help": "Aiuto",
+        "IdentifyRegion": "Identifica in un poligono",
+        "LayerCatalog": "Catalogo livelli",
+        "LayerTree": "Livelli",
+        "Login": "Accedi",
+        "Logout": "Disconnetti",
+        "Measure": "Misura",
+        "MeasureLineString": "Misura una linea",
+        "MeasurePolygon": "Misura un poligono",
+        "Print": "Stampa",
+        "RasterExport": "Esporta su immagine",
+        "Redlining": "Strumenti di disegno",
+        "Share": "Condividi",
+        "ThemeSwitcher": "Temi",
+        "Tools": "Strumenti",
+        "Bookmark": "Segnalibri",
+        "TimeManager": "Linea temporale"
+      },
+      "filter": "Filtra menù...",
+      "menulabel": "Mappa e strumenti"
+    },
+    "search": {
+      "coordinates": "Coordinate",
+      "nominatim": {
+        "amenity": "Amenità",
+        "boundary": "Confine",
+        "building": "Costruzione",
+        "landuse": "Utilizzo terreno",
+        "leisure": "Svago",
+        "place": "Località",
+        "highway": "Autostrata",
+        "natural": "Natura",
+        "railway": "Ferrovia",
+        "tourism": "Turismo"
+      },
+      "all": "Tutti",
+      "enablelayer": "Attivare il livello",
+      "existinglayer": "Il livello esiste già nella mappa",
+      "invisiblelayer": "Il risultato si trova su un livello che non è visibile.",
+      "more": "Altri risultati",
+      "noresults": "Nessun risultato",
+      "providerselection": "Selezione provider",
+      "search": "Cerca",
+      "searchall": "Cerca località o aggiungi cartine...",
+      "searchinprogress": "Ricerca in corso...",
+      "searchreset": "Resetta ricerca",
+      "themes": "Temi"
+    },
+    "attribtable": {
+      "addfeature": "Aggiungi oggetto",
+      "commit": "Salva riga modificata",
+      "delete": "Elimina",
+      "deletefailed": "Impossibile eliminare uno o più oggetti",
+      "deletefeatures": "Elimina gli oggetti selezionati",
+      "deleting": "Eliminando...",
+      "discard": "Ripristina riga modificata",
+      "formeditmode": "Apri il formulario per l'oggetto selezionato",
+      "geomnoadd": "Utilizzare il formulario per creare nuovi oggetti per questo livello",
+      "layer": "Livello",
+      "loadfailed": "Errore nel caricamento dei dati",
+      "loading": "Caricamento...",
+      "nodelete": "Non eliminare",
+      "nogeomnoform": "Il formulario non è disponibile per livelli senza geometria",
+      "pleasereload": "Premere 'Ricarica' per caricare la tabella attributi...",
+      "reload": "Ricarica",
+      "selectlayer": "Seleziona livello...",
+      "title": "Tabella attributi",
+      "zoomtoselection": "Zoomare sugli oggetti selezionati"
+    },
+    "bgswitcher": {
+      "nobg": "Nessuno sfondo"
+    },
+    "bookmark": {
+      "add": "Crea segnalibro",
+      "addfailed": "Impossibile creare il segnalibro",
+      "description": "Descrizione",
+      "lastUpdate": "Ultimo salvataggio",
+      "manage": "Gestisci segnalibri",
+      "notloggedin": "È necessario aver effettuato l'accesso per utilizzare i segnalibri",
+      "open": "Apri nella finestra corrente",
+      "openTab": "Apri in una nuova finestra",
+      "remove": "Rimuovi segnalibro",
+      "removefailed": "Impossibile rimuovere il segnalibro",
+      "savefailed": "Impossibile aggiornare il segnalibro",
+      "update": "Aggiorna segnalibro"
+    },
+    "bottombar": {
+      "mousepos_label": "Coordinate",
+      "scale_label": "Scala",
+      "terms_label": "Condizioni di uso",
+      "viewertitle_label": "QWC2 Demo"
+    },
+    "copybtn": {
+      "click_to_copy": "Clicca per copiare",
+      "copied": "Copiato"
+    },
+    "dxfexport": {
+      "layers": "Livelli",
+      "selectinfo": "Seleziona l'area da esportare",
+      "symbologyscale": "Scala per la simbologia"
+    },
+    "editing": {
+      "add": "Aggiungi",
+      "attrtable": "Tabella",
+      "canceldelete": "Annulla",
+      "clearpicture": "Cancella",
+      "commit": "Salva",
+      "commitfailed": "Impossibile salvare",
+      "create": "Crea",
+      "delete": "Elimina",
+      "discard": "Annulla",
+      "draw": "Disegna",
+      "feature": "Oggetto",
+      "geomreadonly": "La geometria contiene valori Z non nulli ed è quindi di sola lettura.",
+      "invalidform": "Formulario invalido",
+      "maximize": "Massimizza",
+      "minimize": "Minimizza",
+      "nocompatpick": "Nessuna geometria compatibile",
+      "noeditablelayers": "Nessun livello modificabile",
+      "paint": "Modifica",
+      "pick": "Seleziona",
+      "pickdrawfeature": "Copia geometria esistente",
+      "reallydelete": "Elimina",
+      "relationcommitfailed": "Alcune relazioni non sono state salvate, consultare i tooltip delle icone per i dettagli.",
+      "select": "Seleziona...",
+      "selectedpicture": "Immagine selezionata",
+      "takepicture": "Foto",
+      "unsavedchanged": "Vi sono cambiamenti non salvati. Volete comunque lasciare la pagina?"
+    },
+    "featureform": {
+      "feature": "Oggetto",
+      "noresults": "Nessun risultato",
+      "querying": "Caricando...",
+      "title": "Formulario oggetto"
+    },
+    "fileselector": {
+      "placeholder": "Seleziona file..."
+    },
+    "heightprofile": {
+      "asl": "s.l.m.",
+      "distance": "Distanza",
+      "export": "Esporta",
+      "height": "Altitudine",
+      "loading": "Calcolo del profilo di altezza..."
+    },
+    "identify": {
+      "export": "Esporta",
+      "exportformat": "Formato d'esportazione",
+      "featureReport": "Oggetto formulario",
+      "link": "Link",
+      "noattributes": "Nessun attributo",
+      "noresults": "Nessun risultato",
+      "querying": "Caricando...",
+      "title": "Titolo"
+    },
+    "imageeditor": {
+      "confirmclose": "Chiudere senza salvare?",
+      "title": "Editor immagine"
+    },
+    "importlayer": {
+      "addfailed": "Impossibile aggiungere il livello",
+      "addlayer": "Aggiungi livello",
+      "connect": "Connetti",
+      "filter": "Filtro",
+      "loading": "Caricamento...",
+      "localfile": "File locale",
+      "nofeatures": "Non è stato importato nessun oggetto ",
+      "noresults": "Nessun risultato o URL non valido",
+      "url": "URL",
+      "urlplaceholder": "Indirizzo WMS, WMTS, WFS..."
+    },
+    "infotool": {
+      "clickhelpPoint": "Seleziona un luogo da identificare sulla mappa...",
+      "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare"
+    },
+    "layercatalog": {
+      "windowtitle": "Catalogo livelli"
+    },
+    "layerinfo": {
+      "abstract": "Riassunto",
+      "attribution": "Attribuzione",
+      "dataUrl": "URL dati",
+      "keywords": "Parole chiavi",
+      "legend": "Legenda",
+      "maxscale": "Scala massima",
+      "metadataUrl": "URL metadati",
+      "minscale": "Scala minima",
+      "title": "Informazioni livello"
+    },
+    "layertree": {
+      "compare": "Compara il primo livello",
+      "deletealllayers": "Rimuovi tutti i livelli",
+      "importlayer": "Importa livello",
+      "maptip": "Attiva maptip",
+      "printlegend": "Stampa legenda",
+      "separator": "Separatore",
+      "separatortooltip": "Aggiungi separatore",
+      "transparency": "Trasparenza",
+      "visiblefilter": "Filtra livelli non visibili",
+      "zoomtolayer": "Zoom a tutto il livello"
+    },
+    "linkfeatureform": {
+      "cancel": "Annulla",
+      "close": "Chiudi",
+      "drawhint": "Disegnare l'oggetto sulla mappa...",
+      "pickhint": "Seleziona un oggetto sulla mappa..."
+    },
+    "locate": {
+      "feetUnit": "piedi",
+      "metersUnit": "metri",
+      "popup": "Sei distante {distance} {unit} da questa posizione",
+      "statustooltip": {
+        "DISABLED": "Posizione: disattivato",
+        "ENABLED": "Posizione: attivato",
+        "FOLLOWING": "Posizione: seguendo",
+        "LOCATING": "Posizione: rilevando",
+        "PERMISSION_DENIED": "Posizione: permesso negato"
+      }
+    },
+    "map": {
+      "loading": "In caricamento...",
+      "resetrotation": "Resetta orientamento"
+    },
+    "mapinfotooltip": {
+      "elevation": "Altitudine",
+      "title": "Posizione"
+    },
+    "measureComponent": {
+      "areaLabel": "Area",
+      "bearingLabel": "Direzione",
+      "lengthLabel": "Lunghezza",
+      "pointLabel": "Posizione"
+    },
+    "navbar": {
+      "perpage": "per pagina"
+    },
+    "print": {
+      "grid": "Griglia",
+      "layout": "Layout",
+      "legend": "Legenda",
+      "maximize": "Massimizza",
+      "minimize": "Minimizza",
+      "nolayouts": "Nessun layout di stampa",
+      "notheme": "Nessun tema selezionato",
+      "output": "Stampa",
+      "resolution": "Risoluzione:",
+      "rotation": "Rotazione:",
+      "scale": "Scala:",
+      "submit": "Stampa",
+      "wait": "Attendere..."
+    },
+    "qtdesignerform": {
+      "loading": "Caricando formulario..."
+    },
+    "rasterexport": {
+      "format": "Formato:",
+      "resolution": "Risoluzione:",
+      "selectinfo": "Seleziona l'area da esportare"
+    },
+    "redlining": {
+      "border": "Bordo",
+      "buffer": "Buffer",
+      "buffercompute": "Calcola",
+      "bufferdistance": "Distanza",
+      "bufferlayer": "Destinazione",
+      "bufferlayername": "Buffer",
+      "bufferselectfeature": "Seleziona un oggetto...",
+      "circle": "Cerchio",
+      "delete": "Elimina",
+      "draw": "Disegna",
+      "edit": "Modifica",
+      "fill": "Riempimento",
+      "freehand": "Mano libera",
+      "label": "Ettichetta",
+      "layer": "Layer",
+      "line": "Linea",
+      "outline": "Contorno",
+      "pick": "Seleziona",
+      "point": "Punto",
+      "polygon": "Poligono",
+      "size": "Dimensione",
+      "text": "Testo",
+      "width": "Larghezza"
+    },
+    "scratchdrawing": {
+      "finish": "Finito"
+    },
+    "searchbox": {
+      "filter": "Filtro",
+      "layers": "Livelli",
+      "more": "Altri risultati",
+      "morelayers": "Sono disponibili altri risultati",
+      "nodescription": "Nessuna descrizione disponibile",
+      "placeholder": "Cerca luoghi o aggiungi cartina...",
+      "places": "Luoghi",
+      "recent": "Ricerche recenti"
+    },
+    "serviceinfo": {
+      "abstract": "Riassunto",
+      "contactEmail": "Email",
+      "contactOrganization": "Organizzazione",
+      "contactPerson": "Persona di contatto",
+      "contactPhone": "Telefono",
+      "contactPosition": "Posizione",
+      "keywords": "Parole chiavi",
+      "onlineResource": "Risorsa online",
+      "title": "Informazioni sul tema"
+    },
+    "share": {
+      "QRCodeLinkTitle": "Codice QR",
+      "directLinkTitle": "Collegamento diretto",
+      "refresh": "Genera permalink",
+      "shareTitle": "QWC2",
+      "showpin": "Mostra pin",
+      "socialIntro": "Social network"
+    },
+    "snapping": {
+      "loading": "Caricamento delle geometrie per snapping",
+      "snappingenabled": "Snapping"
+    },
+    "themelayerslist": {
+      "addlayer": "Aggiungi layer",
+      "addlayerstotheme": "Aggiungi layer alla mappa corrente",
+      "addselectedlayers": "Aggiungi i layer selezionati"
+    },
+    "themeswitcher": {
+      "addlayerstotheme": "Aggiungi layer alla mappa corrente",
+      "addtotheme": "Aggiungere al tema corrente",
+      "confirmswitch": "Layer che non fanno parte del tema saranno rimossi. Procedere?",
+      "filter": "Filtra...",
+      "match": {
+        "abstract": "Riassunto",
+        "keywords": "Parole chiavi",
+        "title": "Titolo"
+      },
+      "openintab": "Apri in nuova scheda",
+      "restrictedthemeinfo": "Non sei autorizzato a visualizzare il tema oppure non hai effettuato il login"
+    },
+    "timemanager": {
+      "animationinterval": "Intervallo animazione",
+      "markers": "Marker",
+      "notemporaldata": "Nessun layer con dimensioni temporali è attivo nella cartina.",
+      "play": "Anima",
+      "playrev": "Anima indietro",
+      "rewind": "Resetta animazione",
+      "stepback": "Passo indietro",
+      "stepfwd": "Passo avanti",
+      "stepsize": "Passo",
+      "stop": "Ferma animazione",
+      "title": "Linea temporale",
+      "toggle": "Abilità gesitone temporale",
+      "unit": {
+        "century": "secoli",
+        "days": "giorni",
+        "decade": "decenni",
+        "hours": "ore",
+        "milliseconds": "millisecondi",
+        "minutes": "minuti",
+        "months": "mesi",
+        "seconds": "secondi",
+        "years": "anni"
+      }
+    },
+    "tooltip": {
+      "background": "Cambia sfondo",
+      "fullscreendisable": "Disattiva modalità schermo intero",
+      "fullscreenenable": "Attiva modalitä schermo intero",
+      "home": "Mostra tutta la mappa intera",
+      "zoomin": "Ingrandisci",
+      "zoomout": "Rimpicciolisci"
+    },
+    "vectorlayerpicker": {
+      "prompt": "Nome del layer"
+    },
+    "window": {
+      "close": "Chiudi",
+      "dock": "Aggancia",
+      "maximize": "Massimizza",
+      "minimize": "Minimizza",
+      "undock": "Sgancia",
+      "unmaximize": "Ripristina",
+      "unminimize": "Ingrandisci"
+    }
+  }
+}

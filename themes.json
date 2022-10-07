@@ -1,0 +1,806 @@
+{
+  "themes": {
+    "title": "root",
+    "subdirs": [],
+    "items": [
+      {
+        "url": "http://qwc2.sourcepole.ch/ows/uster/bauprojekte",
+        "id": "bauprojekte",
+        "name": "Liegenschaftsprojekte Stadt Uster",
+        "title": "Liegenschaftsprojekte Stadt Uster",
+        "description": "",
+        "attribution": {
+          "Title": "Stadt Uster",
+          "OnlineResource": "https://gis.uster.ch/"
+        },
+        "abstract": "Bauprojekte auf städtischen Liegenschaften, wie z.b. Schulgebäude, Sportanlagen, städtische Büros oder Werkhof.\n\nZu den Projekten existieren verschiedene Projektstati: Planung, Beratung, Realisierung.",
+        "keywords": "Bauprojekte, Hochbauprojekte, Stadt Uster",
+        "onlineResource": "http://qwc2.sourcepole.ch/ows/uster/bauprojekte",
+        "contact": {
+          "person": "Diana Isler-Bader",
+          "organization": "Stadt Uster, Liegenschaften",
+          "position": "",
+          "phone": "044 944 74 53",
+          "email": "diana(punkt)isler(at)uster(punkt)ch"
+        },
+        "availableFormats": [
+          "image/jpeg",
+          "image/png",
+          "image/png; mode=16bit",
+          "image/png; mode=8bit",
+          "image/png; mode=1bit",
+          "application/dxf"
+        ],
+        "version": "1.3.0",
+        "infoFormats": [
+          "text/plain",
+          "text/html",
+          "text/xml",
+          "application/vnd.ogc.gml",
+          "application/json",
+          "application/geo+json"
+        ],
+        "bbox": {
+          "crs": "EPSG:4326",
+          "bounds": [
+            8.660671,
+            47.317825,
+            8.777065,
+            47.385902
+          ]
+        },
+        "initialBbox": {
+          "crs": "EPSG:4326",
+          "bounds": [
+            8.660671,
+            47.317825,
+            8.777065,
+            47.385902
+          ]
+        },
+        "scales": [
+          80000,
+          40000,
+          20000,
+          10000,
+          8000,
+          6000,
+          4000,
+          2000,
+          1000,
+          500,
+          250,
+          100
+        ],
+        "printScales": [
+          80000,
+          40000,
+          20000,
+          10000,
+          8000,
+          6000,
+          4000,
+          2000,
+          1000,
+          500,
+          250,
+          100
+        ],
+        "printResolutions": [
+          150,
+          300,
+          600
+        ],
+        "sublayers": [
+          {
+            "name": "TestX",
+            "title": "TestY",
+            "geometryType": "MultiPolygon",
+            "visibility": true,
+            "queryable": true,
+            "displayField": "Name",
+            "abstract": "TestZ",
+            "dataUrl": "http://qwc2.sourcepole.ch/ows/uster/bauprojekte",
+            "opacity": 255,
+            "keywords": "XYZ",
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                8.690424,
+                47.331132,
+                8.733603,
+                47.375233
+              ]
+            },
+            "dimensions": []
+          },
+          {
+            "name": "Gemeindegrenze",
+            "title": "Gemeindegrenze",
+            "geometryType": "Polygon",
+            "visibility": true,
+            "queryable": true,
+            "displayField": "name",
+            "opacity": 255,
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                8.676248,
+                47.319596,
+                8.761463,
+                47.384142
+              ]
+            },
+            "dimensions": []
+          },
+          {
+            "name": "PK und ÜP schwarz-weiss",
+            "title": "PK und ÜP schwarz-weiss",
+            "visibility": false,
+            "queryable": true,
+            "opacity": 255,
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                -0.163874,
+                44.890217,
+                -0.163873,
+                44.890218
+              ]
+            },
+            "dimensions": []
+          }
+        ],
+        "expanded": true,
+        "externalLayers": [],
+        "backgroundLayers": [
+          {
+            "name": "mapnik",
+            "visibility": true
+          },
+          {
+            "name": "opentopomap"
+          }
+        ],
+        "searchProviders": [
+          "coordinates",
+          "uster",
+          {
+            "key": "nominatim",
+            "params": {
+              "countrycodes": "ch"
+            }
+          }
+        ],
+        "additionalMouseCrs": [
+          "EPSG:21781",
+          "EPSG:2056"
+        ],
+        "mapCrs": "EPSG:3857",
+        "print": [
+          {
+            "name": "A4-Hoch",
+            "map": {
+              "name": "map0",
+              "width": 189,
+              "height": 247
+            }
+          },
+          {
+            "name": "A4-Quer",
+            "map": {
+              "name": "map0",
+              "width": 276,
+              "height": 159.5
+            }
+          },
+          {
+            "name": "A3-Hoch",
+            "map": {
+              "name": "map0",
+              "width": 276,
+              "height": 369.5
+            }
+          },
+          {
+            "name": "A3-Quer",
+            "map": {
+              "name": "map0",
+              "width": 399,
+              "height": 246.5
+            }
+          }
+        ],
+        "drawingOrder": [
+          "Gemeindegrenze",
+          "TestX"
+        ],
+        "legendUrl": "http://qwc2.sourcepole.ch/api/v1/legend/uster/bauprojekte?",
+        "featureInfoUrl": "http://qwc2.sourcepole.ch/api/v1/featureinfo/uster/bauprojekte?",
+        "printUrl": "http://qwc2.sourcepole.ch/ows/uster/bauprojekte?",
+        "editConfig": null,
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "url": "http://qwc2.sourcepole.ch/ows/qwc_demo",
+        "id": "qwc_demo",
+        "name": "qwc_demo",
+        "title": "Demo",
+        "description": "",
+        "attribution": {
+          "Title": "Demo attribution",
+          "OnlineResource": "https://127.0.0.1/"
+        },
+        "abstract": "",
+        "keywords": "",
+        "onlineResource": "http://qwc2.sourcepole.ch/ows/qwc_demo",
+        "contact": {
+          "person": "",
+          "organization": "",
+          "position": "",
+          "phone": "",
+          "email": ""
+        },
+        "availableFormats": [
+          "image/jpeg",
+          "image/png",
+          "image/png; mode=16bit",
+          "image/png; mode=8bit",
+          "image/png; mode=1bit",
+          "application/dxf"
+        ],
+        "version": "1.3.0",
+        "infoFormats": [
+          "text/plain",
+          "text/html",
+          "text/xml",
+          "application/vnd.ogc.gml",
+          "application/json",
+          "application/geo+json"
+        ],
+        "bbox": {
+          "crs": "EPSG:4326",
+          "bounds": [
+            -179.999996,
+            -89,
+            179.999996,
+            89
+          ]
+        },
+        "initialBbox": {
+          "crs": "EPSG:3857",
+          "bounds": [
+            -1000000,
+            4000000,
+            3000000,
+            8000000
+          ]
+        },
+        "printResolutions": [
+          300
+        ],
+        "sublayers": [
+          {
+            "name": "edit_demo",
+            "title": "Edit Demo",
+            "mutuallyExclusive": false,
+            "sublayers": [
+              {
+                "name": "edit_points",
+                "title": "Edit Points",
+                "geometryType": "Point",
+                "visibility": true,
+                "queryable": true,
+                "displayField": "name",
+                "opacity": 255,
+                "bbox": {
+                  "crs": "EPSG:4326",
+                  "bounds": [
+                    -4.16051,
+                    -7.109603,
+                    77.999658,
+                    51.889035
+                  ]
+                },
+                "dimensions": []
+              },
+              {
+                "name": "edit_lines",
+                "title": "Edit Lines",
+                "geometryType": "LineString",
+                "visibility": true,
+                "queryable": true,
+                "displayField": "name",
+                "opacity": 255,
+                "bbox": {
+                  "crs": "EPSG:4326",
+                  "bounds": [
+                    -179.999996,
+                    -89,
+                    179.999996,
+                    89
+                  ]
+                },
+                "dimensions": []
+              },
+              {
+                "name": "edit_polygons",
+                "title": "Edit Polygons",
+                "geometryType": "Polygon",
+                "visibility": true,
+                "queryable": true,
+                "displayField": "name",
+                "opacity": 255,
+                "bbox": {
+                  "crs": "EPSG:4326",
+                  "bounds": [
+                    -177.262003,
+                    -21.987341,
+                    178.605868,
+                    47.378912
+                  ]
+                },
+                "dimensions": []
+              }
+            ],
+            "expanded": true
+          },
+          {
+            "name": "geographic_lines",
+            "title": "Geographic lines",
+            "geometryType": "MultiLineString",
+            "visibility": true,
+            "queryable": true,
+            "displayField": "name",
+            "opacity": 255,
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                -180,
+                -66.549927,
+                179.999997,
+                66.549986
+              ]
+            },
+            "dimensions": []
+          },
+          {
+            "name": "country_names",
+            "title": "Country names",
+            "geometryType": "Point",
+            "visibility": true,
+            "queryable": true,
+            "displayField": "z_name",
+            "opacity": 255,
+            "minScale": 0,
+            "maxScale": 10000000,
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                -177.22902,
+                -80.516568,
+                178.519895,
+                73.34887
+              ]
+            },
+            "dimensions": []
+          },
+          {
+            "name": "states_provinces",
+            "title": "States and Provinces",
+            "geometryType": "MultiLineString",
+            "visibility": true,
+            "queryable": true,
+            "displayField": "name",
+            "opacity": 255,
+            "minScale": 0,
+            "maxScale": 5000000,
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                -178.137086,
+                -49.250871,
+                178.448623,
+                81.128532
+              ]
+            },
+            "dimensions": []
+          },
+          {
+            "name": "countries",
+            "title": "Countries",
+            "geometryType": "MultiPolygon",
+            "visibility": true,
+            "queryable": true,
+            "displayField": "name",
+            "opacity": 255,
+            "bbox": {
+              "crs": "EPSG:4326",
+              "bounds": [
+                -180,
+                -89.501386,
+                180,
+                83.634101
+              ]
+            },
+            "dimensions": []
+          }
+        ],
+        "expanded": true,
+        "externalLayers": [],
+        "backgroundLayers": [
+          {
+            "name": "bluemarble",
+            "printLayer": "bluemarble_bg",
+            "visibility": true
+          },
+          {
+            "name": "mapnik",
+            "printLayer": "osm_bg"
+          }
+        ],
+        "searchProviders": [
+          "coordinates",
+          "nominatim"
+        ],
+        "additionalMouseCrs": [],
+        "mapCrs": "EPSG:3857",
+        "print": [
+          {
+            "name": "A4 Landscape",
+            "map": {
+              "name": "map0",
+              "width": 220,
+              "height": 190
+            },
+            "labels": [
+              "user_text"
+            ]
+          }
+        ],
+        "drawingOrder": [
+          "countries",
+          "states_provinces",
+          "country_names",
+          "geographic_lines",
+          "edit_polygons",
+          "edit_lines",
+          "edit_points"
+        ],
+        "legendUrl": "http://qwc2.sourcepole.ch/api/v1/legend/qwc_demo?",
+        "featureInfoUrl": "http://qwc2.sourcepole.ch/api/v1/featureinfo/qwc_demo?",
+        "printUrl": "http://qwc2.sourcepole.ch/ows/qwc_demo?",
+        "skipEmptyFeatureAttributes": true,
+        "editConfig": null,
+        "thumbnail": "img/mapthumbs/default.jpg"
+      }
+    ],
+    "defaultTheme": "qwc_demo",
+    "defaultScales": [
+      4000000,
+      2000000,
+      1000000,
+      400000,
+      200000,
+      80000,
+      40000,
+      20000,
+      10000,
+      8000,
+      6000,
+      4000,
+      2000,
+      1000,
+      500,
+      250,
+      100
+    ],
+    "defaultPrintGrid": [
+      {
+        "s": 10000,
+        "x": 1000,
+        "y": 1000
+      },
+      {
+        "s": 1000,
+        "x": 100,
+        "y": 100
+      },
+      {
+        "s": 100,
+        "x": 10,
+        "y": 10
+      }
+    ],
+    "externalLayers": [
+      {
+        "name": "bauzonen",
+        "type": "wms",
+        "tiled": true,
+        "url": "https://wms.geo.admin.ch",
+        "params": {
+          "LAYERS": "ch.are.bauzonen"
+        },
+        "infoFormats": [
+          "text/plain"
+        ]
+      }
+    ],
+    "backgroundLayers": [
+      {
+        "name": "mapnik",
+        "title": "Open Street Map",
+        "type": "osm",
+        "source": "osm",
+        "thumbnail": "img/mapthumbs/mapnik.jpg",
+        "attribution": {
+          "Title": "OpenStreetMap contributors",
+          "OnlineResource": "https://www.openstreetmap.org/copyright"
+        }
+      },
+      {
+        "name": "Night2012",
+        "title": "NASAGIBS Night 2012",
+        "type": "tileprovider",
+        "source": "nasagibs",
+        "provider": "NASAGIBS.ViirsEarthAtNight2012",
+        "thumbnail": "img/mapthumbs/Night2012.jpg",
+        "attribution": {
+          "Title": "Suomi NPP / VIIRS via NASA Earth Observatory"
+        }
+      },
+      {
+        "name": "StamenWatercolor",
+        "title": "Stamen Watercolor/OSM",
+        "group": "stamen",
+        "type": "tileprovider",
+        "source": "stamen",
+        "provider": "Stamen.Watercolor",
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "name": "StamenToner",
+        "title": "Stamen Toner/OSM",
+        "group": "stamen",
+        "type": "tileprovider",
+        "source": "stamen",
+        "provider": "Stamen.Toner",
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "name": "group",
+        "title": "Group",
+        "type": "group",
+        "items": [
+          {
+            "ref": "Gemeindegrenzen",
+            "minScale": 10000,
+            "maxScale": 300000
+          },
+          {
+            "ref": "oevhaltestellen"
+          }
+        ],
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "name": "Gemeindegrenzen",
+        "title": "Gemeindegrenzen",
+        "type": "wms",
+        "url": "http://wms.geo.admin.ch/",
+        "tiled": false,
+        "params": {
+          "LAYERS": "ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill",
+          "STYLES": "default"
+        },
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "name": "oevhaltestellen",
+        "title": "Haltestellen öV",
+        "type": "wms",
+        "url": "http://wms.geo.admin.ch/",
+        "tiled": true,
+        "params": {
+          "LAYERS": "ch.bav.haltestellen-oev",
+          "STYLES": "default"
+        },
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "type": "wmts",
+        "url": "http://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
+        "title": "Blue Marble",
+        "name": "bluemarble",
+        "tileMatrixPrefix": "",
+        "tileMatrixSet": "GoogleMapsCompatible_Level8",
+        "originX": -20037508.34278925,
+        "originY": 20037508.34278925,
+        "projection:": "EPSG:3857",
+        "resolutions": [
+          156543.03390625,
+          78271.516953125,
+          39135.7584765625,
+          19567.87923828125,
+          9783.939619140625,
+          4891.9698095703125,
+          2445.9849047851562,
+          1222.9924523925781
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "thumbnail": "img/mapthumbs/default.jpg",
+        "attribution": {}
+      },
+      {
+        "type": "wms",
+        "url": "https://maps.omniscale.net/v2/swl-33d96aa8/style.default/map",
+        "title": "osm",
+        "name": "osm",
+        "srs": "EPSG:25832",
+        "params": {
+          "LAYERS": "osm",
+          "STYLES": "",
+          "VERSION": "1.1.1"
+        },
+        "thumbnail": "img/mapthumbs/default.jpg",
+        "attribution": {}
+      },
+      {
+        "type": "tileprovider",
+        "provider": "OpenTopoMap",
+        "title": "OpenTopoMap",
+        "name": "opentopomap",
+        "thumbnail": "img/mapthumbs/default.jpg",
+        "attribution": {
+          "Title": "Map data: &copy; <a href=\"https://openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href=\"https://opentopomap.org\" target=\"_blank\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC-BY-SA</a>)"
+        }
+      },
+      {
+        "type": "wmts",
+        "url": "https://wxs.ign.fr/pratique/geoportail/wmts",
+        "title": "IGN",
+        "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS",
+        "format": "image/jpeg",
+        "style": "normal",
+        "originX": -20037508,
+        "originY": 20037508,
+        "projection": "EPSG:3857",
+        "resolutions": [
+          156543.03392804097,
+          78271.51696402048,
+          39135.75848201024,
+          19567.87924100512,
+          9783.93962050256,
+          4891.96981025128,
+          2445.98490512564,
+          1222.99245256282,
+          611.49622628141,
+          305.748113140705,
+          152.8740565703525,
+          76.43702828517625,
+          38.21851414258813,
+          19.109257071294063,
+          9.554628535647032,
+          4.777314267823516,
+          2.388657133911758,
+          1.194328566955879
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "requestEncoding": "KVP",
+        "tileMatrixSet": "PM",
+        "tileMatrixPrefix": "",
+        "thumbnail": "img/mapthumbs/ign.png",
+        "attribution": {
+          "Title": "<a href=\"http://www.geoportail.fr/\" target=\"_blank\"><img src=\"https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif\"></a>"
+        }
+      },
+      {
+        "type": "group",
+        "title": "Karte farbig",
+        "name": "pixelkarte",
+        "items": [
+          {
+            "ref": "av_grundbuchplan-color",
+            "minScale": 0,
+            "maxScale": 2000
+          },
+          {
+            "ref": "swisstopo.pixelkarte-farbe",
+            "minScale": 2001
+          }
+        ],
+        "thumbnail": "img/mapthumbs/default.jpg",
+        "attribution": {}
+      },
+      {
+        "type": "wmts",
+        "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/2056/{TileMatrix}/{TileCol}/{TileRow}.jpeg",
+        "title": "swisstopo.pixelkarte-farbe",
+        "name": "swisstopo.pixelkarte-farbe",
+        "tileMatrixPrefix": "",
+        "tileMatrixSet": "2056_26",
+        "originX": 2420000,
+        "originY": 1350000,
+        "projection:": "EPSG:2056",
+        "resolutions": [
+          4000,
+          3750,
+          3500,
+          3250,
+          3000,
+          2750,
+          2500,
+          2250,
+          2000,
+          1750,
+          1500,
+          1250,
+          1000,
+          750,
+          650,
+          500,
+          250,
+          100,
+          50,
+          20,
+          10,
+          5,
+          2.5,
+          2,
+          1.5,
+          1,
+          0.5,
+          0.25
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "attribution": {
+          "Title": {
+            "Title": "Hintergrundkarte &copy; <a href=\"https://www.swisstopo.ch\" target=\"_blank\">swisstopo</a>"
+          }
+        },
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "type": "wms",
+        "name": "av_grundbuchplan-color",
+        "title": "av_grundbuchplan-color",
+        "url": "https://iap-map.gl.ch/ows/mainmap",
+        "params": {
+          "LAYERS": "ch.gl.cadastre.av_grundbuchplan-color",
+          "STYLES": "default"
+        },
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      },
+      {
+        "name": "luftbild_zh_2015",
+        "title": "Luftbild ZH 2015",
+        "type": "wms",
+        "url": "http://localhost/qgis/qgis_mapserv.fcgi",
+        "params": {
+          "LAYERS": "Orthofoto_2015_stdzh_0.5_jpeg",
+          "STYLES": "default",
+          "VERSION": "1.3.0",
+          "MAP": "/home/sandro/wms/luftbild_zh.qgs"
+        },
+        "attribution": {},
+        "thumbnail": "img/mapthumbs/default.jpg"
+      }
+    ],
+    "defaultWMSVersion": "1.3.0"
+  }
+}
