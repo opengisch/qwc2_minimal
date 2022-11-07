@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const fs = require('fs');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -56,7 +57,10 @@ module.exports = (env, argv) => {
             new webpack.DefinePlugin({
                 'process.env': {
                     NODE_ENV: JSON.stringify(argv.mode),
-                    BuildDate: JSON.stringify(buildDate)
+                    BuildDate: JSON.stringify(buildDate),
+                    QWC2Version: JSON.stringify(fs.readFileSync('/qwc2/.qwc2.version.txt', 'utf8')),
+                    QWC2DownloadSource: JSON.stringify(fs.readFileSync('/qwc2/.qwc2.download_source.txt', 'utf8')),
+                    QWC2RepoSource: JSON.stringify(fs.readFileSync('/qwc2/.qwc2.repo_source.txt', 'utf8'))
                 }
             }),
             new webpack.NormalModuleReplacementPlugin(/openlayers$/, "/qwc2/libs/openlayers"),

@@ -35,29 +35,9 @@
   ],
   "projections": [
     {
-      "code": "EPSG:32632",
-      "proj": "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
-      "label": "WGS 84 / UTM zone 32N"
-    },
-    {
-      "code": "EPSG:21781",
-      "proj": "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs",
-      "label": "CH1903 / LV03"
-    },
-    {
       "code": "EPSG:2056",
       "proj": "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs",
       "label": "CH1903+ / LV95"
-    },
-    {
-      "code": "EPSG:25832",
-      "proj": "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
-      "label": "ETRS89 / UTM 32N"
-    },
-    {
-      "code": "EPSG:31983",
-      "proj": "+proj=utm +zone=23 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
-      "label": "SIRGAS 2000 / UTM zone 23S"
     }
   ],
   "plugins": {
@@ -167,14 +147,6 @@
         }
       },
       {
-        "name": "TaskButton",
-        "cfg": {
-          "position": 6,
-          "task": "Editing",
-          "icon": "editing"
-        }
-      },
-      {
         "name": "HomeButton",
         "cfg": {
           "position": 4
@@ -202,6 +174,50 @@
         "name": "BackgroundSwitcher",
         "cfg": {
           "position": 0
+        }
+      },
+      {
+        "name": "TopBar",
+        "cfg": {
+          "menuItems": [
+            {"key": "ThemeSwitcher", "icon": "themes"},
+            {"key": "LayerTree", "icon": "layers"},
+            {"key": "LayerCatalog", "icon": "catalog"},
+            {"key": "Share", "icon": "share"},
+            {"key": "Bookmark", "icon": "bookmark"},
+            {"key": "Tools", "icon": "tools", "subitems": [
+              {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+              {"key": "TimeManager", "icon": "clock"},
+              {"key": "Measure", "icon": "measure"},
+              {"key": "Redlining", "icon": "draw"},
+              {"key": "Editing", "icon": "editing"},
+              {"key": "FeatureForm", "icon": "featureform"},
+              {"key": "AttributeTable", "icon": "editing"},
+              {"key": "DxfExport", "icon": "dxfexport"},
+              {"key": "RasterExport", "icon": "rasterexport"}
+            ]},
+            {"key": "Print", "icon": "print"},
+            {"key": "Help", "icon": "info"},
+            {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
+          ],
+          "toolbarItems": [
+            {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
+            {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
+            {"key": "Print", "icon": "print"},
+            {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+            {"key": "FeatureForm", "icon": "featureform"}
+          ],
+          "searchOptions": {
+            "minScaleDenom": 1000,
+            "showProviderSelection": true,
+            "providerSelectionAllowAll": true,
+            "zoomToLayers": false,
+            "showProvidersInPlaceholder": false
+          },
+          "appMenuClearsTask": true,
+          "appMenuFilterField": true,
+          "appMenuVisibleOnStartup": false,
+          "logoUrl": "/"
         }
       },
       {
@@ -249,6 +265,10 @@
           "printExternalLayers": true,
           "gridInitiallyEnabled": false
         }
+      },
+      {
+        "name": "Help",
+        "mapClickAction": "identify"
       }
     ]
   }

@@ -9,5 +9,13 @@
 import React from 'react';
 
 export function renderHelp() {
-    return (<div>QWC2 Demo build {process.env.BuildDate}</div>);
+    return (
+        <div>
+            <ul>
+                <li>QWC2 build {process.env.BuildDate}</li>
+                <li>QWC2 Version: {process.env.QWC2Version}</li>
+                <li>QWC2 Download Source: {process.env.QWC2DownloadSource}</li>
+                <li>QWC2 Repository URL: {process.env.QWC2RepoSource}</li>
+            </ul>
+        </div>);
 }

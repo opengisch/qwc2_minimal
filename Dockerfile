@@ -3,6 +3,7 @@ FROM node:${NODE_VERSION} as base
 
 ARG QWC2_VERSION_HASH="86ba224001cd3c9813ad645f4ccf4de7a17db801"
 ARG QWC2_DOWNLOAD_PATH="https://github.com/qgis/qwc2/archive/$QWC2_VERSION_HASH.zip"
+ARG QWC2_REPO_VERSION_URL="https://github.com/qgis/qwc2/tree/$QWC2_VERSION_HASH"
 RUN apt-get update && apt-get install -y \
       bash \
       curl && \
@@ -11,7 +12,8 @@ RUN apt-get update && apt-get install -y \
     rm $QWC2_VERSION_HASH.zip && \
     mv qwc2-$QWC2_VERSION_HASH /qwc2 && \
     echo "$QWC2_VERSION_HASH" > /qwc2/.qwc2.version.txt && \
-    echo "$QWC2_DOWNLOAD_PATH" > /qwc2/.qwc2.download_source.txt
+    echo "$QWC2_DOWNLOAD_PATH" > /qwc2/.qwc2.download_source.txt && \
+    echo "$QWC2_REPO_VERSION_URL" > /qwc2/.qwc2.repo_source.txt
 
 COPY ./app/.yarnrc /qwc2
 
