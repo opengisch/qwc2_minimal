@@ -1,5 +1,5 @@
 ARG NODE_VERSION="18.10"
-FROM node:${NODE_VERSION} as qwc2_base
+FROM node:${NODE_VERSION} as base
 
 ARG QWC2_VERSION_HASH="86ba224001cd3c9813ad645f4ccf4de7a17db801"
 ARG QWC2_DOWNLOAD_PATH="https://github.com/qgis/qwc2/archive/$QWC2_VERSION_HASH.zip"
@@ -19,7 +19,7 @@ WORKDIR /qwc2
 
 RUN yarn install
 
-FROM qwc2_base as dev
+FROM base as dev
 
 ENV DEV_SERVER_PORT=8080
 
