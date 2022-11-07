@@ -42,7 +42,7 @@ jobs:
       - name: Build and push mgdm2oereb-service
         uses: docker/build-push-action@v3
         with:
-          context: ./mgdm2oereb_frontend
+          context: ./
           push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-dev:latest
           target: dev
@@ -62,7 +62,7 @@ jobs:
       - name: Build and push mgdm2oereb-service
         uses: docker/build-push-action@v3
         with:
-          context: ./mgdm2oereb_frontend
+          context: ./
           push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-builder:latest
           target: builder
@@ -82,7 +82,7 @@ jobs:
       - name: Build and push mgdm2oereb-service
         uses: docker/build-push-action@v3
         with:
-          context: ./mgdm2oereb_frontend
+          context: ./
           push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-prod:latest
           target: prod
