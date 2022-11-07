@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  qwc2-minimal:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./app:/app
+      - ./example_config/config.json:/usr/share/nginx/html/config.json
+      - ./example_config/themes.json:/usr/share/nginx/html/themes.json

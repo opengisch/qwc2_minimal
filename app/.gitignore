@@ -3,6 +3,5 @@ dist/
 prod/
 icons/build
 npm-debug.log
-themes.json
 static/assets/img/genmapthumbs/*
 yarn-error.log

@@ -1,24 +1,11 @@
-QWC2_VERSION_HASH="86ba224001cd3c9813ad645f4ccf4de7a17db801"
-QWC2_REPO_URL="https://github.com/qgis/qwc2.git"
-QWC2_FOLDER="qwc2"
 
-qwc2/.timestamp-clone:
-	git clone $(QWC2_REPO_URL) $(QWC2_FOLDER)
-	touch $@
+QWC2_VERSION_HASH=$(shell cat /qwc2/.qwc2.version.txt)
+QWC2_REPO_URL=$(shell cat /qwc2/.qwc2.download_source.txt)
 
-qwc2/.timestamp-checkout: qwc2/.timestamp-clone
-	cd $(QWC2_FOLDER) && git checkout $(QWC2_VERSION_HASH)
-
-node_modules/.timestamp-install: qwc2/.timestamp-checkout
-	yarn install
-	touch $@
-
-prod/.timestamp-build: node_modules/.timestamp-install
-	npm run tsupdate 
-	npm run iconfont
-# npm run themesconfig
-
-	node_modules/webpack/bin/webpack.js --mode production --progress
+prod/.timestamp-build: install
+	node /qwc2/scripts/updateTranslations.js
+	node /qwc2/scripts/makeIconkit.js
+	/node_modules/webpack/bin/webpack.js --mode production --progress
 	echo "<!-- Built: $(shell date -R) -->" >> ./prod/index.html
 	echo "<!-- Built: $(QWC2_VERSION_HASH) -->" >> ./prod/index.html
 	echo "<!-- Built: $(QWC2_REPO_URL) -->" >> ./prod/index.html
@@ -28,11 +15,14 @@ prod/.timestamp-build: node_modules/.timestamp-install
 	touch $@
 
 .PHONY: install
-install: node_modules/.timestamp-install
+install: package.json
+	yarn install
 
 .PHONY: serve-dev
 serve-dev: install
-	yarn start
+	node /qwc2/scripts/updateTranslations.js
+	node /qwc2/scripts/makeIconkit.js
+	/node_modules/webpack/bin/webpack.js serve --mode development --progress --host 0.0.0.0 --port $(DEV_SERVER_PORT)
 
 .PHONY: clean
 clean:
@@ -44,3 +34,7 @@ clean:
 
 .PHONY: build
 build: prod/.timestamp-build
+
+.PHONY: generate-themes
+generate-themes: themesConfig.json
+	node /qwc2/scripts/themesConfig.js

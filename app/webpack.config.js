@@ -37,8 +37,7 @@ module.exports = (env, argv) => {
                 }
             ],
             compress: true,
-            hot: true,
-            port: 8080
+            hot: true
         },
         resolve: {
             extensions: [".mjs", ".js", ".jsx"],
@@ -60,7 +59,7 @@ module.exports = (env, argv) => {
                     BuildDate: JSON.stringify(buildDate)
                 }
             }),
-            new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
+            new webpack.NormalModuleReplacementPlugin(/openlayers$/, "/qwc2/libs/openlayers"),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, "index.html"),
                 build: buildDate,
@@ -91,7 +90,7 @@ module.exports = (env, argv) => {
                     exclude: /node_modules(\\|\/)(?!qwc2)/,
                     use: {
                         loader: 'babel-loader',
-                        options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
+                        options: { babelrcRoots: ['.', '/qwc2', '/node_modules'] }
                     }
                 },
                 {
