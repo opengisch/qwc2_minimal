@@ -26,7 +26,7 @@ jobs:
           # do not push for the moment, to avoid load
           # push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-base:${{ github.head_ref }}-${{ github.sha }}
-          target: qwc2_base
+          target: base
       - name: Build and push qwc2-minimal-dev
         uses: docker/build-push-action@v3
         with:
