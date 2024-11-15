@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
         watchOptions: {
             ignored: /node_modules(\\|\/)(?!qwc2)/
         },
-        devtool: isProd ? 'source-map' : 'eval',
+        devtool: isProd ? 'source-map' : 'inline-source-map',
         optimization: {
             minimize: isProd
         },
@@ -46,7 +46,8 @@ module.exports = (env, argv) => {
                 stream: require.resolve("stream-browserify"),
                 buffer: require.resolve("buffer/"),
                 path: require.resolve("path-browserify"),
-                timers: require.resolve("timers-browserify")
+                timers: require.resolve("timers-browserify"),
+                url: require.resolve("url/")
             }
         },
         snapshot: {
@@ -86,7 +87,7 @@ module.exports = (env, argv) => {
                     ]
                 },
                 {
-                    test: /(.woff|.woff2|.png|.jpg|.gif)/,
+                    test: /(.woff|.woff2|.png|.jpg|.gif|.svg)/,
                     type: 'asset/inline'
                 },
                 {
@@ -98,7 +99,7 @@ module.exports = (env, argv) => {
                     }
                 },
                 {
-                    test: /\.mjs$/,
+                    test: /(.mjs|.js)$/,
                     type: 'javascript/auto'
                 },
                 {

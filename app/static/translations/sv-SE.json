@@ -5,56 +5,69 @@
       "items": {
         "ExternalLink": "",
         "AttributeTable": "",
+        "Cyclomedia": "",
         "DxfExport": "DXF Export",
         "Editing": "Redigera",
         "FeatureForm": "",
+        "FeatureSearch": "",
         "Help": "Hjälp",
+        "IdentifyPoint": "",
         "IdentifyRegion": "Identifiera med område",
         "LayerCatalog": "",
         "LayerTree": "Lager & teckenförklaring",
         "Login": "Logga in",
         "Logout": "Logga ut",
+        "MapLegend": "",
         "Measure": "Mät",
         "MeasureLineString": "Mäta en linje",
         "MeasurePolygon": "Mäta en polygon",
         "Print": "Skriv ut",
         "RasterExport": "Raster Export",
+        "MapExport": "Exportera karta",
         "Redlining": "Rita",
+        "Routing": "",
         "Share": "Dela länk",
         "ThemeSwitcher": "Tema",
         "Tools": "Kartverktyg",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Karta & Verktyg"
     },
     "search": {
       "coordinates": "Koordinater",
-      "nominatim": {
-        "amenity": "",
-        "boundary": "",
-        "building": "",
-        "landuse": "",
-        "leisure": "",
-        "place": "",
-        "highway": "",
-        "natural": "",
-        "railway": "",
-        "tourism": ""
-      },
       "all": "",
+      "clearfilter": "",
       "enablelayer": "",
       "existinglayer": "",
+      "filter": "",
       "invisiblelayer": "",
+      "limittoarea": "",
       "more": "Mer",
+      "none": "",
       "noresults": "",
       "providerselection": "",
       "search": "",
       "searchall": "",
       "searchinprogress": "",
       "searchreset": "",
+      "solr": "",
+      "themelayers": "",
       "themes": ""
+    },
+    "colorschemes": {
+      "default": "",
+      "dark": "",
+      "highcontrast": ""
+    },
+    "app": {
+      "missingbg": "",
+      "missinglayers": "",
+      "missingpermalink": "",
+      "missingprojection": "",
+      "missingtheme": ""
     },
     "attribtable": {
       "addfeature": "",
@@ -86,6 +99,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -102,7 +116,17 @@
     },
     "copybtn": {
       "click_to_copy": "Klicka för att kopiera",
-      "copied": "Kopierade"
+      "copied": "Kopierade",
+      "copyfailed": ""
+    },
+    "cyclomedia": {
+      "clickonmap": "",
+      "initializing": "",
+      "loaderror": "",
+      "loading": "",
+      "login": "",
+      "scalehint": "",
+      "title": ""
     },
     "dxfexport": {
       "layers": "",
@@ -143,17 +167,30 @@
       "querying": "",
       "title": ""
     },
+    "featuresearch": {
+      "noresults": "",
+      "query": "",
+      "select": "",
+      "title": ""
+    },
     "fileselector": {
+      "files": "",
       "placeholder": "Välj fil..."
     },
     "heightprofile": {
       "asl": "m.ö.h.",
       "distance": "Avstånd",
+      "drawnodes": "",
+      "error": "",
       "export": "",
       "height": "Höjd",
-      "loading": "Beräknar höjdprofil..."
+      "loading": "Beräknar höjdprofil...",
+      "loadingimage": "",
+      "print": "",
+      "title": ""
     },
     "identify": {
+      "clipboard": "",
       "export": "Exportera",
       "exportformat": "",
       "featureReport": "Objektrapport",
@@ -176,12 +213,16 @@
       "localfile": "Lokal fil",
       "nofeatures": "Inga objekt kunde importeras",
       "noresults": "Inget svar eller ogiltig URL",
+      "notgeopdf": "",
+      "unknownproj": "",
       "url": "URL",
       "urlplaceholder": "Skriv in URL till WMS, WMTS, WFS..."
     },
     "infotool": {
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Rita en polygon runt objektn som ska identifieras"
+      "clickhelpPolygon": "Rita en polygon runt objektn som ska identifieras",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": ""
@@ -231,20 +272,57 @@
       "loading": "Laddar...",
       "resetrotation": ""
     },
+    "mapexport": {
+      "configuration": "",
+      "format": "Format:",
+      "resolution": "Upplösning:",
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
+    },
     "mapinfotooltip": {
       "elevation": "Höjd",
       "title": "Position"
     },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
+    },
     "measureComponent": {
       "areaLabel": "Area",
       "bearingLabel": "Bäring",
+      "imperial": "",
       "lengthLabel": "Längd",
+      "metric": "",
       "pointLabel": "Position"
+    },
+    "misc": {
+      "ctrlclickhint": ""
     },
     "navbar": {
       "perpage": ""
     },
+    "newspopup": {
+      "dialogclose": "",
+      "dontshowagain": "",
+      "title": ""
+    },
+    "numericinput": {
+      "angle": "",
+      "featureunsupported": "",
+      "height": "",
+      "nofeature": "",
+      "side": "",
+      "width": "",
+      "windowtitle": ""
+    },
     "print": {
+      "atlasfeature": "",
+      "format": "Format",
       "grid": "Rutnät",
       "layout": "Layout:",
       "legend": "",
@@ -253,9 +331,10 @@
       "nolayouts": "Valt tema stöder inte utskrift",
       "notheme": "Inget tema valt",
       "output": "Utskrift",
-      "resolution": "Upplösning:",
-      "rotation": "Rotation:",
-      "scale": "Skala:",
+      "pickatlasfeature": "",
+      "resolution": "Upplösning",
+      "rotation": "Rotation",
+      "scale": "Skala",
       "submit": "Skriv ut",
       "wait": "Vänta..."
     },
@@ -265,7 +344,11 @@
     "rasterexport": {
       "format": "Format:",
       "resolution": "Upplösning:",
-      "selectinfo": "Dra en rektangel runt området som ska exporteras..."
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
     },
     "redlining": {
       "border": "Kant",
@@ -279,18 +362,63 @@
       "delete": "Radera",
       "draw": "Rita",
       "edit": "Redigera",
-      "fill": "Fyllning",
+      "ellipse": "",
       "freehand": "",
       "label": "Etikett",
       "layer": "Lager",
       "line": "Linje",
-      "outline": "Kant",
+      "markers": "",
+      "measurements": "",
+      "numericinput": "",
       "pick": "Välj",
       "point": "Punkt",
       "polygon": "Yta",
+      "rectangle": "",
       "size": "Storlek",
+      "square": "",
       "text": "Text",
+      "transform": "",
       "width": "Bredd"
+    },
+    "routing": {
+      "add": "",
+      "addviapoint": "",
+      "arriveat": "",
+      "clear": "",
+      "computefailed": "",
+      "computing": "",
+      "excludepolygons": "",
+      "export": "",
+      "fastest": "",
+      "fromhere": "",
+      "importerror": "",
+      "importhint": "",
+      "importpoints": "",
+      "iso_intervals": "",
+      "iso_mode": "",
+      "iso_mode_distance": "",
+      "iso_mode_time": "",
+      "isocenter": "",
+      "isoextracenter": "",
+      "leaveat": "",
+      "leavenow": "",
+      "maxspeed": "",
+      "method": "",
+      "mode_auto": "",
+      "mode_bicycle": "",
+      "mode_heavyvehicle": "",
+      "mode_transit": "",
+      "mode_walking": "",
+      "optimized_route": "",
+      "reachability": "",
+      "roundtrip": "",
+      "route": "",
+      "shortest": "",
+      "tohere": "",
+      "useferries": "",
+      "usehighways": "",
+      "usetollways": "",
+      "windowtitle": ""
     },
     "scratchdrawing": {
       "finish": ""
@@ -316,17 +444,31 @@
       "onlineResource": "",
       "title": ""
     },
+    "settings": {
+      "bookmarks": "",
+      "colorscheme": "",
+      "confirmlang": "",
+      "default": "",
+      "defaulttheme": "",
+      "defaultthemefailed": "",
+      "language": "",
+      "systemlang": "",
+      "themes": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR kod",
       "directLinkTitle": "Via en direktlänk",
+      "expires": "",
       "refresh": "",
       "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "I ditt favoritnätverk"
     },
     "snapping": {
+      "edge": "",
       "loading": "",
-      "snappingenabled": ""
+      "snappingenabled": "",
+      "vertex": ""
     },
     "themelayerslist": {
       "addlayer": "",
@@ -348,15 +490,35 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "classify": "",
+      "classifynone": "",
+      "displayfeatures": "",
+      "displaylayers": "",
+      "displayminimal": "",
+      "endtime": "",
+      "future": "",
+      "group": "",
+      "groupnone": "",
+      "home": "",
+      "loading": "",
+      "loop": "",
       "markers": "",
       "notemporaldata": "",
+      "now": "",
+      "past": "",
       "play": "",
       "playrev": "",
       "rewind": "",
+      "starttime": "",
       "stepback": "",
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_fixed": "",
+      "timeline_infinite": "",
+      "timelinedisplay": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -369,7 +531,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Byt bakgrund",
@@ -380,6 +544,7 @@
       "zoomout": "Zooma ut"
     },
     "vectorlayerpicker": {
+      "none": "",
       "prompt": ""
     },
     "window": {

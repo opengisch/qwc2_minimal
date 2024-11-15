@@ -5,56 +5,69 @@
       "items": {
         "ExternalLink": "",
         "AttributeTable": "Table d'attributs",
+        "Cyclomedia": "Cyclomedia",
         "DxfExport": "Export DXF",
         "Editing": "Editer",
         "FeatureForm": "Formulaire d'objet",
+        "FeatureSearch": "Recherche objet",
         "Help": "Aide",
+        "IdentifyPoint": "Interroger point",
         "IdentifyRegion": "Interroger la région",
         "LayerCatalog": "Catalogue des couches",
         "LayerTree": "Couches",
         "Login": "Connexion",
         "Logout": "Déconnexion",
+        "MapLegend": "Légende",
         "Measure": "Mesurer",
         "MeasureLineString": "Mesurer une ligne",
         "MeasurePolygon": "Mesurer un polygone",
         "Print": "Imprimer",
         "RasterExport": "Export image",
+        "MapExport": "Exporter carte",
         "Redlining": "Dessiner",
+        "Routing": "Routage",
         "Share": "Partager",
         "ThemeSwitcher": "Thèmes",
         "Tools": "Outils",
         "Bookmark": "Marque-pages",
-        "TimeManager": "Ligne du temps"
+        "TimeManager": "Ligne du temps",
+        "Settings": "Paramètres"
       },
       "filter": "Filtrer le menu...",
       "menulabel": "Cartes et outils"
     },
     "search": {
       "coordinates": "Coordonnées",
-      "nominatim": {
-        "amenity": "",
-        "boundary": "",
-        "building": "",
-        "landuse": "",
-        "leisure": "",
-        "place": "",
-        "highway": "",
-        "natural": "",
-        "railway": "",
-        "tourism": ""
-      },
       "all": "Tous",
+      "clearfilter": "Effaccer",
       "enablelayer": "Activer la couche",
       "existinglayer": "La couche existe déjà dans la carte",
+      "filter": "Filtre",
       "invisiblelayer": "Le résultat est sur une couche désactivé",
+      "limittoarea": "Limiter à la région",
       "more": "Plus...",
+      "none": "Aucune",
       "noresults": "Pas de résultats",
       "providerselection": "Services de recherche",
       "search": "Chercher",
       "searchall": "Rechercher un lieu ou ajouter une carte...",
       "searchinprogress": "Recherche en cours",
       "searchreset": "Réinitialiser la recherche",
+      "solr": "Recherche en plein texte",
+      "themelayers": "Couches de thèmes",
       "themes": "Cartes"
+    },
+    "colorschemes": {
+      "default": "Par défaut",
+      "dark": "Sombre",
+      "highcontrast": "Fort contraste"
+    },
+    "app": {
+      "missingbg": "Impossible de trouver le fond \"{0}\", affichage du fond par défaut.",
+      "missinglayers": "Impossible de trouver les couches suivantes: {0}.",
+      "missingpermalink": "Le permalien ou le signet n'est pas valide ou a expiré.",
+      "missingprojection": "Impossible de charger le thème \"{0}\": la projection {1} n'est pas définie.",
+      "missingtheme": "Impossible de trouver le thème \"{0}\", chargement du thème par défaut."
     },
     "attribtable": {
       "addfeature": "Ajouter un objet",
@@ -83,9 +96,10 @@
     "bookmark": {
       "add": "Ajouter un marque-page",
       "addfailed": "Echec de création du marque-page",
-      "description": "Description",
+      "description": "Entrer la description...",
       "lastUpdate": "Dernier enregistrement",
       "manage": "Gérer les marque-pages",
+      "nobookmarks": "Pas de marque-pages",
       "notloggedin": "Vous avez besoin d'être authentifié pour pouvoir enregistrer des marques-pages",
       "open": "Ouvrir le marque-page dans l'onglet courant",
       "openTab": "Ouvrir le marque-page dans un nouvel onglet",
@@ -102,7 +116,17 @@
     },
     "copybtn": {
       "click_to_copy": "Cliquer pour copier",
-      "copied": "Copié"
+      "copied": "Copié",
+      "copyfailed": "Impossible de copier"
+    },
+    "cyclomedia": {
+      "clickonmap": "Cliquez sur un enregistrement sur la carte",
+      "initializing": "Initialisation de Cyclomedia...",
+      "loaderror": "Échec de l'initialisation de Cyclomedia",
+      "loading": "Chargement",
+      "login": "Connexion",
+      "scalehint": "Les enregistrements ne sont visibles que sur la carte sous l'échelle 1 :{0}.",
+      "title": "Visualiseur Cyclomedia"
     },
     "dxfexport": {
       "layers": "Couches",
@@ -138,22 +162,35 @@
       "unsavedchanged": "Il y a des modifications non enregistrées. Faut-il quand même quitter la page?"
     },
     "featureform": {
-      "feature": "Object",
+      "feature": "Objet",
       "noresults": "Pas de résultats",
       "querying": "Identification en cours...",
       "title": "Formulaire d'objet"
     },
+    "featuresearch": {
+      "noresults": "Pas de résultats",
+      "query": "Terme",
+      "select": "Sélectionner",
+      "title": "Recherche objet"
+    },
     "fileselector": {
+      "files": "Fichiers",
       "placeholder": "Choisir un fichier..."
     },
     "heightprofile": {
       "asl": "s/mer",
       "distance": "Distance",
+      "drawnodes": "Dessiner des nœuds",
+      "error": "Échec du calcul du profil de hauteur",
       "export": "Exporter le profil",
       "height": "Altitude",
-      "loading": "Calcul du profil de hauteur..."
+      "loading": "Calcul du profil de hauteur...",
+      "loadingimage": "Chargement de l'image de la carte...",
+      "print": "Imprimer le profil de hauteur",
+      "title": "Profil de hauteur"
     },
     "identify": {
+      "clipboard": "Copier dans le presse-papiers",
       "export": "Exporter",
       "exportformat": "Format d'export:",
       "featureReport": "Données de l'objet",
@@ -176,12 +213,16 @@
       "localfile": "Fichier local",
       "nofeatures": "Aucune entité ne peut être importée.",
       "noresults": "Pas de résultat ou URL non valide",
+      "notgeopdf": "Le fichier sélectionné ne semble pas être un GeoPDF.",
+      "unknownproj": "Le GeoPDF sélectionné utilise une projection inconnue: {0}.",
       "url": "URL",
       "urlplaceholder": "Entrer l'URL d'un WMS, WMTS, WFS..."
     },
     "infotool": {
       "clickhelpPoint": "Cliquez sur un emplacement pour l'identifier sur la carte...",
-      "clickhelpPolygon": "Dessiner un polygone pour identifier les objets"
+      "clickhelpPolygon": "Dessiner un polygone pour identifier les objets",
+      "clickhelpRadius": "Configurez un rayon et cliquez sur un emplacement pour identifier les objets autour de ce point",
+      "radius": "Rayon"
     },
     "layercatalog": {
       "windowtitle": "Catalogue de couches"
@@ -231,41 +272,83 @@
       "loading": "Chargement de la carte...",
       "resetrotation": "Réinitialiser la rotation"
     },
+    "mapexport": {
+      "configuration": "Configuration",
+      "format": "Format",
+      "resolution": "Résolution",
+      "scale": "Echelle",
+      "size": "Dimension",
+      "submit": "Exporter",
+      "usersize": "Selectionner sur la carte...",
+      "wait": "Veuillez patienter..."
+    },
     "mapinfotooltip": {
       "elevation": "Altitude",
       "title": "Position"
     },
+    "maplegend": {
+      "bboxdependent": "Légende dépendante de l'étendue de la carte",
+      "onlyvisible": "Seulement les couches visibles",
+      "scaledependent": "Légende dépendante de l'échelle de la carte",
+      "windowtitle": "Légende"
+    },
     "measureComponent": {
       "areaLabel": "Surface",
       "bearingLabel": "Direction",
+      "imperial": "Impérial",
       "lengthLabel": "Longueur",
+      "metric": "Métrique",
       "pointLabel": "Position"
+    },
+    "misc": {
+      "ctrlclickhint": "Ouvrir avec Ctrl+Click"
     },
     "navbar": {
       "perpage": "Par page"
     },
+    "newspopup": {
+      "dialogclose": "Fermer",
+      "dontshowagain": "Ne plus montrer",
+      "title": "Actualités"
+    },
+    "numericinput": {
+      "angle": "Angle",
+      "featureunsupported": "Entrée numérique non disponible pour cette géométrie",
+      "height": "Hauteur",
+      "nofeature": "Aucune objet active",
+      "side": "Côté",
+      "width": "Largeur",
+      "windowtitle": "Entrée numérique"
+    },
     "print": {
+      "atlasfeature": "Objet atlas",
+      "format": "Format",
       "grid": "Grille",
-      "layout": "Format",
+      "layout": "Mise en page",
       "legend": "Légende",
       "maximize": "Maximiser",
       "minimize": "Minimiser",
       "nolayouts": "Il n'y a pas de mise en page disponible pour le thème choisi.",
       "notheme": "Pas de thème sélectionné",
       "output": "Impression",
+      "pickatlasfeature": "Choisir dans la couche {0}",
       "resolution": "Résolution",
       "rotation": "Rotation",
       "scale": "Echelle",
-      "submit": "Créer le PDF",
+      "submit": "Imprimer",
       "wait": "Veuillez patienter..."
     },
     "qtdesignerform": {
       "loading": "Chargement du formulaire..."
     },
     "rasterexport": {
-      "format": "Format:",
+      "format": "Format",
       "resolution": "Résolution",
-      "selectinfo": "Dessiner un rectangle pour définir la zone à exporter"
+      "scale": "Echelle",
+      "size": "Dimension",
+      "submit": "Exporter",
+      "usersize": "Selectionner sur la carte...",
+      "wait": "Veuillez patienter..."
     },
     "redlining": {
       "border": "Bordure",
@@ -279,18 +362,63 @@
       "delete": "Effacer",
       "draw": "Dessiner",
       "edit": "Editer",
-      "fill": "Remplissage",
+      "ellipse": "Ellipse",
       "freehand": "Dessin à main libre",
       "label": "Texte",
       "layer": "Couche",
       "line": "Ligne",
-      "outline": "Contour",
+      "markers": "Pointes",
+      "measurements": "Montrer les mesures",
+      "numericinput": "Entrée numérique",
       "pick": "Choisir",
       "point": "Point",
       "polygon": "Polygone",
+      "rectangle": "Rectangle",
       "size": "Taille",
+      "square": "Carré",
       "text": "Texte",
+      "transform": "Transformer",
       "width": "Largeur"
+    },
+    "routing": {
+      "add": "Ajouter",
+      "addviapoint": "Par ici",
+      "arriveat": "Arriver à",
+      "clear": "Réinitialiser",
+      "computefailed": "Échec du calcul",
+      "computing": "Calculation...",
+      "excludepolygons": "Exclure les zones",
+      "export": "Exporter",
+      "fastest": "Plus rapide",
+      "fromhere": "À partir d'ici",
+      "importerror": "Impossible d'importer. Le contenu du fichier doit être une GeoJSON FeatureCollection de points",
+      "importhint": "Fichier contenant une GeoJSON FeatureCollection de points",
+      "importpoints": "Importer",
+      "iso_intervals": "Intervalles",
+      "iso_mode": "Mode",
+      "iso_mode_distance": "Distance",
+      "iso_mode_time": "Temps",
+      "isocenter": "Centre",
+      "isoextracenter": "Centre additionnel",
+      "leaveat": "Partir à",
+      "leavenow": "Partir maintenant",
+      "maxspeed": "Vitesse maximale",
+      "method": "Méthode",
+      "mode_auto": "Automobile",
+      "mode_bicycle": "Bicyclette",
+      "mode_heavyvehicle": "Véhicule pesant",
+      "mode_transit": "Transit",
+      "mode_walking": "Marcher",
+      "optimized_route": "Route optimale",
+      "reachability": "Accessibilité",
+      "roundtrip": "Aller-retour",
+      "route": "Route",
+      "shortest": "Plus courte",
+      "tohere": "Jusqu'ici",
+      "useferries": "Utiliser les ferries",
+      "usehighways": "Utiliser les autoroutes",
+      "usetollways": "Utiliser les péages",
+      "windowtitle": "Routage"
     },
     "scratchdrawing": {
       "finish": "Terminer"
@@ -316,17 +444,31 @@
       "onlineResource": "Ressource en ligne",
       "title": "Information sur le thème"
     },
+    "settings": {
+      "bookmarks": "Marque-pages",
+      "colorscheme": "Schéma de couleurs",
+      "confirmlang": "L'application sera rechargée pour changer la langue. Procéder?",
+      "default": "Par défaut",
+      "defaulttheme": "Thème par défaut",
+      "defaultthemefailed": "Impossible de modifier le thème par défaut : {0}",
+      "language": "Langue",
+      "systemlang": "Langue du système",
+      "themes": "Thèmes"
+    },
     "share": {
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Via un lien direct",
+      "expires": "Cette lien permanent est valide jusqu'au {0}.",
       "refresh": "Générer un lien permanent",
       "shareTitle": "QWC2",
       "showpin": "Afficher les épingles",
       "socialIntro": "Via votre réseau social favori"
     },
     "snapping": {
+      "edge": "Snapping aux bords",
       "loading": "Chargement",
-      "snappingenabled": "Snapping activé"
+      "snappingenabled": "Snapping activé",
+      "vertex": "Snapping aux sommets"
     },
     "themelayerslist": {
       "addlayer": "Ajouter la couche",
@@ -348,15 +490,35 @@
     },
     "timemanager": {
       "animationinterval": "Intervalle d'animation",
+      "classify": "Classement par attribut",
+      "classifynone": "Aucun",
+      "displayfeatures": "Chronologie avec objets",
+      "displaylayers": "Chronologie avec couches",
+      "displayminimal": "Chronologie uniquement",
+      "endtime": "Fin",
+      "future": "Future",
+      "group": "Attribut de regroupement",
+      "groupnone": "Aucun",
+      "home": "Réinitialiser",
+      "loading": "Chargement...",
+      "loop": "Répéter",
       "markers": "Marqueurs",
       "notemporaldata": "Aucune couche temporelle n'est visible sur la carte.",
+      "now": "Maintenant",
+      "past": "Passé",
       "play": "Jouer",
       "playrev": "Jouer en sens inverse",
       "rewind": "Rembobiner",
+      "starttime": "Début",
       "stepback": "Pas en arrière",
       "stepfwd": "Pas en avant",
       "stepsize": "aille de pas",
       "stop": "Stop",
+      "timeline": "Chronologie",
+      "timeline_fixed": "Fixe",
+      "timeline_infinite": "Infinite",
+      "timelinedisplay": "Affichage",
+      "timelinescale": "Èchelle de temps (non-linéarité)",
       "title": "Ligne du temps",
       "toggle": "Activer le contrôle du temps",
       "unit": {
@@ -369,7 +531,9 @@
         "months": "mois",
         "seconds": "secondes",
         "years": "années"
-      }
+      },
+      "zoomin": "Zoomer",
+      "zoomout": "Dézoomer"
     },
     "tooltip": {
       "background": "Changer de fond",
@@ -380,6 +544,7 @@
       "zoomout": "Dézoomer"
     },
     "vectorlayerpicker": {
+      "none": "Aucune",
       "prompt": "Entrez le nom de la couche"
     },
     "window": {
