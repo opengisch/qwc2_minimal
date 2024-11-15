@@ -105,6 +105,7 @@ module.exports = (env, argv) => {
                 {
                     test: /\.js$/,
                     enforce: "pre",
+                    include: '/qwc2/node_modules',
                     use: ["source-map-loader"]
                 }
             ]
