@@ -69,6 +69,7 @@
                 "name": "edit_demo",
                 "title": "Edit Demo",
                 "mutuallyExclusive": false,
+                "visibility": true,
                 "sublayers": [
                   {
                     "name": "edit_points",
@@ -78,13 +79,17 @@
                     "queryable": true,
                     "displayField": "name",
                     "opacity": 255,
+                    "styles": {
+                      "default": "default"
+                    },
+                    "style": "default",
                     "bbox": {
                       "crs": "EPSG:4326",
                       "bounds": [
-                        -4.16051,
-                        -7.109603,
-                        77.999658,
-                        59.442792
+                        8.540804,
+                        47.377738,
+                        8.540805,
+                        47.377739
                       ]
                     },
                     "dimensions": []
@@ -97,13 +102,17 @@
                     "queryable": true,
                     "displayField": "name",
                     "opacity": 255,
+                    "styles": {
+                      "default": "default"
+                    },
+                    "style": "default",
                     "bbox": {
                       "crs": "EPSG:4326",
                       "bounds": [
-                        -104.062275,
-                        20.280322,
-                        24.719663,
-                        59.367121
+                        8.542115,
+                        47.377069,
+                        8.542278,
+                        47.377544
                       ]
                     },
                     "dimensions": []
@@ -116,13 +125,17 @@
                     "queryable": true,
                     "displayField": "name",
                     "opacity": 255,
+                    "styles": {
+                      "default": "default"
+                    },
+                    "style": "default",
                     "bbox": {
                       "crs": "EPSG:4326",
                       "bounds": [
-                        -179.536896,
-                        -21.987341,
-                        175.711895,
-                        59.44345
+                        8.541217,
+                        47.377464,
+                        8.541461,
+                        47.377751
                       ]
                     },
                     "dimensions": []
@@ -138,6 +151,10 @@
                 "queryable": true,
                 "displayField": "name",
                 "opacity": 255,
+                "styles": {
+                  "default": "default"
+                },
+                "style": "default",
                 "bbox": {
                   "crs": "EPSG:4326",
                   "bounds": [
@@ -157,6 +174,10 @@
                 "queryable": true,
                 "displayField": "z_name",
                 "opacity": 255,
+                "styles": {
+                  "default": "default"
+                },
+                "style": "default",
                 "minScale": 0,
                 "maxScale": 10000000,
                 "bbox": {
@@ -178,6 +199,10 @@
                 "queryable": true,
                 "displayField": "name",
                 "opacity": 255,
+                "styles": {
+                  "default": "default"
+                },
+                "style": "default",
                 "minScale": 0,
                 "maxScale": 5000000,
                 "bbox": {
@@ -199,6 +224,10 @@
                 "queryable": true,
                 "displayField": "name",
                 "opacity": 255,
+                "styles": {
+                  "default": "default"
+                },
+                "style": "default",
                 "bbox": {
                   "crs": "EPSG:4326",
                   "bounds": [
@@ -240,7 +269,8 @@
                 },
                 "labels": [
                   "user_text"
-                ]
+                ],
+                "default": false
               }
             ],
             "drawingOrder": [
@@ -255,6 +285,13 @@
             "legendUrl": "http://qwc2.sourcepole.ch/api/v1/legend/qwc_demo?",
             "featureInfoUrl": "http://qwc2.sourcepole.ch/api/v1/featureinfo/qwc_demo?",
             "printUrl": "http://qwc2.sourcepole.ch/ows/qwc_demo?",
+            "themeInfoLinks": {
+              "title": "Info links",
+              "entries": [
+                "example_link",
+                "example_link2"
+              ]
+            },
             "skipEmptyFeatureAttributes": true,
             "editConfig": null,
             "thumbnail": "img/mapthumbs/default.jpg"
@@ -361,9 +398,13 @@
             "queryable": true,
             "displayField": "Name",
             "abstract": "TestZ",
-            "dataUrl": "http://qwc2.sourcepole.ch/ows/uster/bauprojekte",
+            "dataUrl": "www.xyz.org",
             "opacity": 255,
             "keywords": "XYZ",
+            "styles": {
+              "default": "default"
+            },
+            "style": "default",
             "bbox": {
               "crs": "EPSG:4326",
               "bounds": [
@@ -383,6 +424,10 @@
             "queryable": true,
             "displayField": "name",
             "opacity": 255,
+            "styles": {
+              "default": "default"
+            },
+            "style": "default",
             "bbox": {
               "crs": "EPSG:4326",
               "bounds": [
@@ -390,23 +435,6 @@
                 47.319596,
                 8.761463,
                 47.384142
-              ]
-            },
-            "dimensions": []
-          },
-          {
-            "name": "PK und ÜP schwarz-weiss",
-            "title": "PK und ÜP schwarz-weiss",
-            "visibility": false,
-            "queryable": true,
-            "opacity": 255,
-            "bbox": {
-              "crs": "EPSG:4326",
-              "bounds": [
-                -0.163874,
-                44.890217,
-                -0.163873,
-                44.890218
               ]
             },
             "dimensions": []
@@ -445,7 +473,8 @@
               "name": "map0",
               "width": 189,
               "height": 247
-            }
+            },
+            "default": false
           },
           {
             "name": "A4-Quer",
@@ -453,7 +482,8 @@
               "name": "map0",
               "width": 276,
               "height": 159.5
-            }
+            },
+            "default": false
           },
           {
             "name": "A3-Hoch",
@@ -461,7 +491,8 @@
               "name": "map0",
               "width": 276,
               "height": 369.5
-            }
+            },
+            "default": false
           },
           {
             "name": "A3-Quer",
@@ -469,7 +500,8 @@
               "name": "map0",
               "width": 399,
               "height": 246.5
-            }
+            },
+            "default": false
           }
         ],
         "drawingOrder": [
@@ -484,6 +516,7 @@
       }
     ],
     "defaultTheme": "qwc_demo",
+    "defaultMapCrs": "EPSG:3857",
     "defaultScales": [
       4000000,
       2000000,
@@ -520,6 +553,7 @@
         "y": 10
       }
     ],
+    "defaultBackgroundLayers": [],
     "externalLayers": [
       {
         "name": "bauzonen",
@@ -532,6 +566,20 @@
         "infoFormats": [
           "text/plain"
         ]
+      }
+    ],
+    "themeInfoLinks": [
+      {
+        "name": "example_link",
+        "title": "Example link",
+        "url": "https://example.com",
+        "target": "mydialogname"
+      },
+      {
+        "name": "example_link2",
+        "title": "Example link 2",
+        "url": "https://example.com/",
+        "target": "_blank"
       }
     ],
     "backgroundLayers": [
