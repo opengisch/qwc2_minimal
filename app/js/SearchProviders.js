@@ -8,8 +8,8 @@
 
 
 import yaml from 'js-yaml';
-import CoordinatesUtils from '../../qwc2/utils/CoordinatesUtils';
-import IdentifyUtils from '../../qwc2/utils/IdentifyUtils';
+import CoordinatesUtils from 'qwc2/utils/CoordinatesUtils';
+import IdentifyUtils from 'qwc2/utils/IdentifyUtils';
 
 function coordinatesSearch(text, searchParams, callback) {
     const displaycrs = searchParams.displaycrs || "EPSG:4326";
