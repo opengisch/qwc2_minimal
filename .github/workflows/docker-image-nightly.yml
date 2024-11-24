@@ -24,7 +24,7 @@ jobs:
         with:
           context: ./
           # do not push for the moment, to avoid load
-          # push: true
+          push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-base:${{ github.head_ref }}-${{ github.sha }}
           target: base
       - name: Build and push qwc2-minimal-dev
@@ -32,7 +32,7 @@ jobs:
         with:
           context: ./
           # do not push for the moment, to avoid load
-          # push: true
+          push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-dev:${{ github.head_ref }}-${{ github.sha }}
           target: dev
       - name: Build and push qwc2-minimal-builder
@@ -40,7 +40,7 @@ jobs:
         with:
           context: ./
           # do not push for the moment, to avoid load
-          # push: true
+          push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-builder:${{ github.head_ref }}-${{ github.sha }}
           target: builder
       - name: Build and push qwc2-minimal-prod
@@ -48,6 +48,6 @@ jobs:
         with:
           context: ./
           # do not push for the moment, to avoid load
-          # push: true
+          push: true
           tags: ghcr.io/${{ github.repository }}-qwc2-minimal-prod:${{ github.head_ref }}-${{ github.sha }}
           target: prod

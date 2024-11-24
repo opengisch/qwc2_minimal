@@ -19,3 +19,23 @@ export function customAttributeCalculator(layer, feature) {
     //   )];
     return [];
 }
+
+export function attributeTransform(name, value, layer, feature) {
+    // Here you can transform the attribute value.
+    return value;
+}
+export const customExporters = [
+    /*
+    {
+        id: "myexport",
+        title: "My Format",
+        allowClipboard: true,
+        export: (features, callback) => {
+            const data = convertToMyFormat(features);
+            callback({
+                data: data, type: "mime/type", filename: "export.ext"
+            });
+        }
+    }
+    */
+];
