@@ -127,9 +127,7 @@
               "stopFollowingOnDrag": true,
               "startupMode": "DISABLED"
             },
-            "MeasurementSupport": {
-              "geodesic": true
-            },
+            "MeasurementSupport": {},
             "ScaleBarSupport": {
               "units": "metric"
             }

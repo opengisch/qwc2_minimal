@@ -228,7 +228,13 @@
           "allowImport": true,
           "groupTogglesSublayers": false,
           "grayUnchecked": false,
-          "layerInfoWindowSize": {"width": 480, "height": 400},
+          "layerInfoGeometry": {
+            "initialWidth": 480,
+            "initialHeight": 400,
+            "initialX": null,
+            "initialY": null,
+            "initiallyDocked": false
+          },
           "bboxDependentLegend": true,
           "scaleDependentLegend": "theme",
           "showToggleAllLayersCheckbox": true,
@@ -320,7 +326,7 @@
       {
         "name": "HeightProfile",
         "cfg": {
-          "heighProfilePrecision": 0
+          "heightProfilePrecision": 0
         }
       },
       {
@@ -396,6 +402,18 @@
       }
     ],
     "mobile": [
+      {
+        "name": "HomeButton",
+        "cfg": {
+          "position": 2
+        }
+      },
+      {
+        "name": "LocateButton",
+        "cfg": {
+          "position": 1
+        }
+      },
       {
         "name": "BottomBar",
         "cfg": {
