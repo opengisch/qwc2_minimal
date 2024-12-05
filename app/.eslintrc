@@ -46,21 +46,21 @@
     "jsx": true
   },
   "rules": {
-/**
- * Strict mode
- */
+    /**
+     * Strict mode
+     */
     // babel inserts "use strict"; for us
     "strict": [2, "never"],          // http://eslint.org/docs/rules/strict
 
-/**
- * ES6
- */
+    /**
+     * ES6
+     */
     "no-var": 2,                     // http://eslint.org/docs/rules/no-var
     "prefer-const": 2,               // http://eslint.org/docs/rules/prefer-const
 
-/**
- * Variables
- */
+    /**
+     * Variables
+     */
     "no-shadow": 2,                  // http://eslint.org/docs/rules/no-shadow
     "no-shadow-restricted-names": 2, // http://eslint.org/docs/rules/no-shadow-restricted-names
     "no-unused-vars": [2, {          // http://eslint.org/docs/rules/no-unused-vars
@@ -69,9 +69,9 @@
     }],
     "no-use-before-define": 2,       // http://eslint.org/docs/rules/no-use-before-define
 
-/**
- * Possible errors
- */
+    /**
+     * Possible errors
+     */
     "comma-dangle": [2, "never"],    // http://eslint.org/docs/rules/comma-dangle
     "no-console": 1,                 // http://eslint.org/docs/rules/no-console
     "no-alert": 1,                   // http://eslint.org/docs/rules/no-alert
@@ -79,9 +79,9 @@
     "block-scoped-var": 2,           // http://eslint.org/docs/rules/block-scoped-var
 
 
-/**
- * Best practices
- */
+    /**
+     * Best practices
+     */
     "consistent-return": 2,          // http://eslint.org/docs/rules/consistent-return
     "curly": [2, "multi-line"],      // http://eslint.org/docs/rules/curly
     "default-case": 2,               // http://eslint.org/docs/rules/default-case
@@ -95,6 +95,7 @@
     "no-eval": 2,                    // http://eslint.org/docs/rules/no-eval
     "no-extend-native": 2,           // http://eslint.org/docs/rules/no-extend-native
     "no-extra-bind": 2,              // http://eslint.org/docs/rules/no-extra-bind
+    "no-extra-semi": "warn",
     "no-floating-decimal": 2,        // http://eslint.org/docs/rules/no-floating-decimal
     "no-implied-eval": 2,            // http://eslint.org/docs/rules/no-implied-eval
     "no-lone-blocks": 2,             // http://eslint.org/docs/rules/no-lone-blocks
@@ -116,14 +117,14 @@
     "wrap-iife": [2, "any"],         // http://eslint.org/docs/rules/wrap-iife
     "yoda": 2,                       // http://eslint.org/docs/rules/yoda
 
-/**
- * Style
- */
+    /**
+     * Style
+     */
     "indent": [2, 4],                // http://eslint.org/docs/rules/indent
     "brace-style": [2,               // http://eslint.org/docs/rules/brace-style
       "1tbs", {
-      "allowSingleLine": true
-    }],
+        "allowSingleLine": true
+      }],
     "quotes": [
       0, "single", "avoid-escape"    // http://eslint.org/docs/rules/quotes
     ],
@@ -138,8 +139,8 @@
     "eol-last": 2,                   // http://eslint.org/docs/rules/eol-last
     "func-names": 0,                 // http://eslint.org/docs/rules/func-names
     "key-spacing": [2, {             // http://eslint.org/docs/rules/key-spacing
-        "beforeColon": false,
-        "afterColon": true
+      "beforeColon": false,
+      "afterColon": true
     }],
     "new-cap": [2, {                 // http://eslint.org/docs/rules/new-cap
       "newIsCap": true
@@ -166,14 +167,15 @@
     "space-infix-ops": 2,            // http://eslint.org/docs/rules/space-infix-ops
     "spaced-comment": 2,             // http://eslint.org/docs/rules/spaced-comment
 
-/**
- * JSX style
- */
+    /**
+     * JSX style
+     */
     "react/jsx-boolean-value": 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     "react/jsx-sort-props": 2,       // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     "react/sort-prop-types": 2,      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
     "react/no-did-mount-set-state": [2, "disallow-in-func"], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
     "react/self-closing-comp": 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    "react/jsx-wrap-multilines": 2   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+    "react/jsx-wrap-multilines": 2,   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+    "react/no-access-state-in-setstate": "error"
   }
 }
