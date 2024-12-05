@@ -1,8 +1,8 @@
-ARG NODE_VERSION="18.10"
+ARG NODE_VERSION="20.18"
 FROM node:${NODE_VERSION} as base
 
-# 2024 LTS
-ARG QWC2_VERSION_HASH="4c434f77660db1060d10ccd96c0f44e0c5482b43"
+# 2024.11.27-lts
+ARG QWC2_VERSION_HASH="1604782b19b5b9d357e750fbc480bade8ebeaf37"
 ARG QWC2_DOWNLOAD_PATH="https://github.com/qgis/qwc2/archive/$QWC2_VERSION_HASH.zip"
 ARG QWC2_REPO_VERSION_URL="https://github.com/qgis/qwc2/tree/$QWC2_VERSION_HASH"
 RUN apt-get update && apt-get install -y \
